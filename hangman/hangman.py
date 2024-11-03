@@ -44,12 +44,12 @@ def take_input():
             print(f"{letter} - Sorry Wrong Guess, you will loose a life")
             display(underscore_word,count)
             continue
+        print(f"{letter} - it's a Correct Guess")
         for i in range(len(word)):
             if letter == word[i]: underscore_word[i] = word[i]
         display(underscore_word, count)
 
-def main() :
-    print(word)
+def main() :
     menu()
     take_input()
 if __name__ == "__main__": main()
